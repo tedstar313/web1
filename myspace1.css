@@ -1,0 +1,254 @@
+
+html, body{
+    width: 100%;
+    height: 100%;}
+#btn{
+    width: 120px;
+    height: 120px;
+    background-color: black;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 60px;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left : 50%;
+    top : 50%;
+    transition: width 1s, height 1s; 
+    z-index: 1;}
+#btn:hover{
+    background-color:black;
+    width: 125px;
+    height: 125px;
+    border-radius: 62.5px;}
+.sidebar{     
+width: 20px;
+height: 20px;
+margin: 35px;
+position: absolute;
+top: -2%;
+box-sizing: content-box;
+background-color:white;
+border-radius: 20px;
+padding: 10px;
+overflow: hidden; 
+transition: all 1s ease;
+z-index: 2;
+animation: circlebar 4s;
+}
+
+#bigbang{
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left : 50%;
+    top : 48.5%;
+    color:white;
+    background-color: black;
+    font-size: 15px;
+    text-align: center;
+    width: 60px;
+    height: 20px;
+    z-index: 2;}
+#space{
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left : 50%;
+    top : 48.5%;
+    color:white;
+    background-color: black;
+    font-size: 15px;
+    text-align: center;
+    width: 75px;
+    height: 20px;
+    z-index: 2;
+    opacity: 0;
+    }
+.fadeout{
+    animation: fadeout 2s;
+    animation-fill-mode: forwards;}
+.fadein{
+    animation: fadein 2s;
+    animation-fill-mode: forwards;
+  }
+/*#name sp an:nth-child(2) {
+    animation-delay: .1s;
+  }
+#name span:nth-child(3) {
+    animation-delay: .2s;
+  }
+#name span:nth-child(4) {
+    animation-delay: .3s;
+  }
+#nameg span:nth-child(5) {
+    animation-delay: .4s;
+  }
+#name span:nth-child(6) {
+    animation-delay: .5s;
+  }
+#name span:nth-child(7) {
+    animation-delay: .6s;
+  }*/
+.menu{
+    background-color:black;
+    color: white;
+    height: 100px;
+    width: 200px;
+    margin: 30px;
+    text-align: 'fixed';
+    line-height: 100px;
+    transition: width 1s;
+    font-size: 30px;
+    font-weight: bold;}
+.sidebar:hover {width: 250px; background-color:white;}
+#menu_01 {
+	transition: width 1s, height 1s;
+    text-align: center;}
+#menu_01:hover {
+    background-color:silver;
+    color:black;
+    width: 220px;
+    height: 120px;}
+#menu_02 {
+    transition: width 1s, height 1s;
+    text-align: center;}
+#menu_02:hover {
+    background-color:silver;
+    color: black;
+    width: 220px;
+    height: 120px;}
+#menu_03 {
+    transition: width 1s, height 1s;
+    text-align: center;}
+#menu_03:hover {
+    background-color:silver;
+    color: black;
+    width: 220px;
+    height: 120px;}
+#menu_04 {
+    transition: width 1s, height 1s;
+    text-align: center;}
+#menu_04:hover {
+    background-color:silver;
+    color: black;
+    width: 220px;
+    height: 120px;}
+#menu_05 {
+    transition: width 1s, height 1s;
+    text-align: center;}
+#menu_05:hover {
+    background-color:silver;
+    color: black;
+    width: 220px;
+    height: 120px;}
+.star{
+    position: absolute;
+    transform: translate(-50%,-50%);
+    margin: auto;
+    width: 20px;
+    height: 20px;
+    border-radius: 20px;
+    background-color: white;
+    animation-name: circlebar, light;
+    animation-duration: 2s, 2s;
+    animation-delay: 0s, 2s;
+    animation-iteration-count: 1, infinite;
+    z-index: 3;
+    transition: all 1s ease;}
+#star1{
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left : 25%;
+    top : 25%;
+  
+}
+#star2{
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left : 25%;
+    top : 75%;
+}
+#star3{
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left : 75%;
+    top : 25%;
+}
+#star4{
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left : 75%;
+    top : 75%;
+}
+.effect{animation: starmove 1s;}
+.effectback1{animation : star1back 1s;}
+.effectback2{animation : star2back 1s;}
+.effectback3{animation : star3back 1s;}
+.effectback4{animation : star4back 1s;}
+.starwide{width: 100%; height: 100%;}
+
+.littlestars{
+    width: 2px;
+    height: 2px;
+    border-radius: 2px;
+    background-color: white;
+}
+
+#backbutton{
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left : 90%;
+    top : 5%;
+    background-color: white;
+    z-index: 3; }
+
+@keyframes circlebar{
+    0%, 20% {transform: translateY(-2%) scale(0);}
+    100% {transform:translate() scale(1);}
+}
+@keyframes starmove{0%{}   
+    100%{left: 50%; top: 50%;}}
+@keyframes star1back{
+    0%{left: 50%; top: 50%;}
+    100%{left: 25%; top: 25%;}
+}
+@keyframes star2back{
+    0%{left: 50%; top: 50%;}
+    100%{left: 25%; top: 75%;}
+}
+@keyframes star3back{
+    0%{left: 50%; top: 50%;}
+    100%{left: 75%; top: 25%;}
+}
+@keyframes star4back{
+    0%{left: 50%; top: 50%;}
+    100%{left: 75%; top: 75%;}
+}
+@keyframes fadeout{
+    0% {opacity: 1;}
+    100%{opacity: 0;}}
+@keyframes fadein{
+    0% {opacity: 0;}
+    100%{opacity: 1;}}    
+
+@keyframes light {
+        0% {
+          background-color: #FFFFFF;
+          box-shadow: 0 0 10px 0px rgba(255, 255, 255, 1);
+        }
+        20% {
+          background-color: #f1f1d6;
+          box-shadow: 0 0 10px 0px rgb(255, 196, 196, 1);
+        }
+        50% {
+            background-color: #c8c99d;
+            box-shadow: 0 0 10px 0px rgb(255, 196, 196, 1);
+          }
+        80% {
+          background-color: #b3b8a4;
+          box-shadow: 0 0 10px 0px rgb(196, 207, 255, 1);
+        }
+        100% {
+          background-color: #FFFFFF;
+          box-shadow: 0 0 10px 0px rgba(255, 255, 255, 0.2);
+        }
+      }
