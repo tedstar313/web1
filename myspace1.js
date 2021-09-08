@@ -32,7 +32,7 @@ function star1() {
     star1.classList.add("starwide");
  }, 1000);
  setTimeout(() => {
-  location.href='myspacemenu1.html'; 
+  location.href='index1.html'; 
  }, 2000);
 }
 function star2() {
