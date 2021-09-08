@@ -1,5 +1,4 @@
-url: "https://tedstar313.github.io" 
-baseurl: "website" 
+
 html, body{
     width: 100%;
     height: 100%;}
@@ -185,8 +184,8 @@ animation: circlebar 4s;
 .effectback2{animation : star2back 1s;}
 .effectback3{animation : star3back 1s;}
 .effectback4{animation : star4back 1s;}
-.starwide{width: 100%; height: 100%;}
-
+.starwide{transition: 1s;
+    width: 100%; height: 100%;}
 .littlestars{
     width: 2px;
     height: 2px;
@@ -253,3 +252,8 @@ animation: circlebar 4s;
           box-shadow: 0 0 10px 0px rgba(255, 255, 255, 0.2);
         }
       }
+
+@keyframes starwide{
+    0%{}
+    100%{width: 100%; height: 100%;}
+}

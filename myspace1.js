@@ -31,6 +31,9 @@ function star1() {
     star1.style.left="50%";
     star1.classList.add("starwide");
  }, 1000);
+ setTimeout(() => {
+  location.href='myspacemenu1.html'; 
+ }, 2000);
 }
 function star2() {
 var star2= document.getElementById("star2"); 
@@ -41,8 +44,10 @@ var star2= document.getElementById("star2");
     star2.style.left="50%";
     star2.classList.add("starwide");
  }, 1000);
+ setTimeout(() => {
+  location.href='myspacemenu1.html'; 
+ }, 2000);
 }
-
 function star3() {
     var star3= document.getElementById("star3");
     star3.classList.remove("effectback3");  
@@ -52,6 +57,9 @@ function star3() {
         star3.style.left="50%";
         star3.classList.add("starwide");
     }, 1000);
+    setTimeout(() => {
+      location.href='myspacemenu1.html'; 
+     }, 2000);
    }
 function star4() {
     var star4= document.getElementById("star4");
@@ -62,6 +70,9 @@ function star4() {
         star4.style.left="50%";
         star4.classList.add("starwide");
     }, 1000);
+    setTimeout(() => {
+      location.href='myspacemenu1.html'; 
+     }, 2000);
    }
 function back() {
     var star1= document.getElementById("star1"); 
@@ -74,11 +85,12 @@ function back() {
     star4.classList.remove("starwide");
     
     if(star1.style.top=="50%"){
+      
       setTimeout(()=>{
         star1.classList.add("effectback1");
         star1.style.left="25%";
         star1.style.top="25%";
-        },1000);
+        },2000);
       }
     else if(star2.style.top=="50%"){
       setTimeout(()=>{ 
