@@ -58,7 +58,7 @@ function star3() {
         star3.classList.add("starwide");
     }, 1000);
     setTimeout(() => {
-      location.href='index1.html'; 
+      location.href='http://192.168.0.17:8080//'; 
      }, 2000);
    }
 function star4() {
