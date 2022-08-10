@@ -45,7 +45,7 @@ var star2= document.getElementById("star2");
     star2.classList.add("starwide");
  }, 1000);
  setTimeout(() => {
-  location.href='myspacemenu1.html'; 
+  location.href='http://192.168.0.25:8080//'; 
  }, 2000);
 }
 function star3() {
@@ -58,7 +58,7 @@ function star3() {
         star3.classList.add("starwide");
     }, 1000);
     setTimeout(() => {
-      location.href='myspacemenu1.html'; 
+      location.href='index1.html'; 
      }, 2000);
    }
 function star4() {
@@ -71,7 +71,7 @@ function star4() {
         star4.classList.add("starwide");
     }, 1000);
     setTimeout(() => {
-      location.href='myspacemenu1.html'; 
+      location.href='index1.html'; 
      }, 2000);
    }
 function back() {
